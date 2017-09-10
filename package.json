@@ -1,0 +1,28 @@
+{
+  "name": "UI-build",
+  "version": "1.0.0",
+  "description": "Webpack + sass + handlebar for building UI prototypes",
+  "main": "",
+  "scripts": {
+    "start:dev": "webpack-dev-server --progress --history-api-fallback --hot --inline --port 9002 --host 0.0.0.0"
+  },
+  "author": "lshe7842@uni.sydney.edu.au",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "cors": "^2.8.4",
+    "css-loader": "^0.28.4",
+    "express": "^4.15.3",
+    "file-loader": "^0.11.2",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
+    "html-webpack-plugin": "^2.29.0",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}

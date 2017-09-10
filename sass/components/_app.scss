@@ -1,0 +1,98 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+section.inactive {
+  display: none;
+}
+
+.app-wrapper {
+  @include display(flex);
+	@include flex-direction(column);
+	min-height: 100vh;
+  position: relative;
+
+  .app {
+    @include flex(1);
+  	@include display(flex);
+  	@include flex-direction(column);
+  	@include justify-content(center);
+
+    &.app-hidden {
+      // Controlled by js
+      display: none;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-family: 'Titillium Web Bold', sans-serif;
+      color: $secondary-color;
+    }
+  }
+
+  &.loading:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 90;
+    position: absolute;
+    opacity: 0.8;
+  }
+}
+
+.app-header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: $secondary-color;
+  text-align: center;
+  color: $primary-color;
+
+  h1 {
+    font-family: 'Titillium Web Bold', sans-serif;
+    font-size: 2rem;
+    margin: 20px 0 ;
+  }
+
+  p {
+    font-family: 'Titillium Web Regular', sans-serif;
+    margin: 5px 0 10px 0;
+  }
+}
+
+.app-footer {
+  background-color: $fifth-color;
+  font-family: 'Titillium Web Regular', sans-serif;
+  font-size: 0.8rem;
+  color: $fourth-color;
+  text-align: center;
+  padding: 20px;
+}
+
+.app-wrapper .loader {
+	@include loader02;
+  // Controlled by parent class by js
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -43px;
+  margin-left: -43px;
+  z-index: 100;
+}
+
+.app-wrapper.loading .loader {
+  display: block;
+}
+
+.app-wrapper img {
+  width: 200px;
+}

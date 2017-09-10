@@ -1,0 +1,28 @@
+.dialog {
+  padding: 10px;
+  border: 2px solid $secondary-color;
+  border-radius: 10px;
+  min-height: 100px;
+  position: relative;
+
+  &:before,
+  &:after {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    content: '';
+    position: absolute;
+    top: 20px;
+  }
+
+  &:before {
+    border-right: 20px solid $secondary-color;
+    left: -20px;
+  }
+
+  &:after {
+    border-right: 20px solid #fff;
+    left: -16px;
+  }
+}

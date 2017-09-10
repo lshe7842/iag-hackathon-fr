@@ -1,0 +1,38 @@
+.button-group {
+  text-align: right;
+  margin-top: 100px;
+  transition: background-color, 0.2s;
+
+  @include media("<=xlphone") {
+    text-align: center;
+  }
+}
+
+button {
+  position: relative;
+  border: none;
+  background-color: $secondary-color;
+  color: $third-color;
+  border-radius: 10px;
+  font-family: 'Titillium Web Regular', sans-serif;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
+}
+
+button.nav-btn {
+  letter-spacing: 0.5rem;
+  min-width: 100px;
+  height: 3rem;
+
+  &.back-btn {
+    background-color: #fff !important;
+    color: $secondary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

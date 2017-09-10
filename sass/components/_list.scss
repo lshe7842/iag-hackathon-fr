@@ -1,0 +1,77 @@
+.box-list-wrapper {
+  font-family: 'Titillium Web Regular', sans-serif;
+
+  .box-list-header {
+    font-family: 'Titillium Web Bold', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  ul.box-list {
+    margin: 0;
+
+    li {
+      border-radius: 10px;
+      padding: 10px;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid #ccc;
+
+      &.selected {
+        border: 1px solid $secondary-color;
+
+        span.selector {
+          border-color: $primary-color;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      dl {
+        margin: 0;
+
+        dt {
+          font-size: 1.2rem;
+        }
+
+        dd {
+          margin: 0;
+
+          &:not(:last-child) {
+            margin: 0 0 5px 0;
+          }
+
+          &.contact-detail {
+            @include display(flex);
+            @include align-items(center);
+
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    span.selector {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      margin-top: -20px;
+      border: 1px solid #aaa;
+      width: 30px;
+      height: 30px;
+
+      i {
+        // Controlled by js
+        display: none;
+        font-size: 4rem;
+        position: absolute;
+        top: -23px;
+        left: -15px;
+        color: $primary-color;
+      }
+    }
+  }
+}

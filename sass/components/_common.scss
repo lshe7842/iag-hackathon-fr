@@ -1,0 +1,16 @@
+/* Styles common to majority of component */
+
+.form-component {
+  outline: 0;
+  background-color: $third-color;
+  border-radius: 5px;
+
+  &.active {
+    border: 1px solid $primary-color;
+  }
+}
+
+p {
+  font-family: 'Titillium Web Regular', sans-serif;
+  margin: 0;
+}
