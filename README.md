@@ -41,6 +41,8 @@ Take photos of people in Hackathon
 Run face_recognition to calculate encodings of these photos & store them in a csv
 
 Hook up camera captured image to the API
+https://davidwalsh.name/browser-camera
+https://davidwalsh.name/convert-canvas-image
 
 Design customer & policy details UI
 
