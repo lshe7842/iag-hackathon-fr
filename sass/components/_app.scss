@@ -24,6 +24,7 @@ section.inactive {
   	@include display(flex);
   	@include flex-direction(column);
   	@include justify-content(center);
+    padding-top: 100px;
 
     &.app-hidden {
       // Controlled by js

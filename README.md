@@ -1,4 +1,4 @@
-# Client side
+# Client Side
 
 npm install
 
@@ -6,7 +6,7 @@ npm run start:dev
 
 http://localhost:9002
 
-# Server side
+# Server Side
 
 ## Install face_recognition python library on AWS
 
@@ -31,3 +31,19 @@ scp -i [path_to_your_pem_file] [path_to_iag-hackathon-fr]/ai/api/server.py ubunt
 cd fr
 
 python server.py
+
+# Things To Do
+
+Design a user story & journey
+
+Take photos of people in Hackathon
+
+Run face_recognition to calculate encodings of these photos & store them in a csv
+
+Hook up camera captured image to the API
+
+Design customer & policy details UI
+
+Plan the demo
+
+(Optional) Write an API in nodejs to return dummy customer & policy data
