@@ -1,3 +1,13 @@
+# Client side
+
+npm install
+
+npm run start:dev
+
+http://localhost:9002
+
+# Server side
+
 ## Install face_recognition python library on AWS
 
 conda create --name hackathon python=3.5
